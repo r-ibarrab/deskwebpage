@@ -14,6 +14,10 @@ const productcomponent = (props) => {
         img = "/resources/port.jpg";
     }
 
+    const orderbutton=()=>{
+        alert(":)");
+    }
+
     return(
         <div className="prod-item">
             <div className="product-container-img pitem">
@@ -31,7 +35,7 @@ const productcomponent = (props) => {
                         <input className="input-input" type="number" placeholer="1"/>
                     </div>
                 </div>
-                <h3 className="order-button">order</h3>
+                <h3 onClick={()=>{orderbutton()}} className="order-button">order</h3>
 
              
 
